@@ -1149,9 +1149,9 @@ function actionMapper(agent) {
 	
 	var i;
   var text=" ";
-	for (i = 0; i < telephony_cards.length; i++) {
-	  text +=  telephony_cards[i] + "\n"+"\n";
-	}
+  for (i = (telephony_cards.length)-1; i > -1; i--) {
+    text +=  telephony_cards[i] + "\n"+"\n";
+  }
 	
 //	console.log("FOR LOOP");
 //	console.log(text);
